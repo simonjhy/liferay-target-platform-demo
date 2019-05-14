@@ -6,3 +6,5 @@ dependencies {
 	compileOnly group: "jstl", name: "jstl"
 	compileOnly group: "org.osgi", name: "org.osgi.service.component.annotations"
 }
+
+description = "a hello world test"
