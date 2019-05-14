@@ -1,3 +1,7 @@
+dependencies {
+	targetPlatformBoms group: "com.liferay", name: "workspace-bom", version: "1.0.0"
+}
+
 allprojects {
 	apply plugin: "java"
 	apply plugin: "maven-publish"
