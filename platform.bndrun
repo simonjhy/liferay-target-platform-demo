@@ -1,4 +1,4 @@
--runrequires: osgi.identity;filter:='(osgi.identity=${project.bundle.Bundle-SymbolicName})'
+-runrequires: osgi.identity;filter:='(osgi.identity=${project.bundle.instructions.Bundle-SymbolicName})'
 -distro: ${targetPlatformDistro}
 -resolve.effective: active
 -resolvedebug: 0
