@@ -1,10 +1,15 @@
 buildscript {
 	dependencies {
-		classpath group: "com.liferay", name: "com.liferay.gradle.plugins.workspace", version: "1.10.18"
+		classpath group: "com.liferay", name: "com.liferay.gradle.plugins.workspace", version: "2.0.2"
+		classpath group: "com.liferay", name: "com.liferay.gradle.plugins.target.platform", version: "2.0.0"
 		classpath group: "net.saliman", name: "gradle-properties-plugin", version: "1.4.6"
 	}
 
 	repositories {
+		maven {
+			url file("repo").toURI()
+		}
+
 		maven {
 			url "https://repository-cdn.liferay.com/nexus/content/groups/public"
 		}
