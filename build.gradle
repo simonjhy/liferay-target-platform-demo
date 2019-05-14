@@ -2,6 +2,12 @@ allprojects {
 	apply plugin: "java"
 	apply plugin: "maven-publish"
 
+	repositories {
+		maven {
+			url rootProject.file("repo").toURI()
+		}
+	}
+
 	publishing {
 		publications {
 			mavenJava(MavenPublication) {
